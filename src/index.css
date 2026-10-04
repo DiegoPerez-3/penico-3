@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@theme {
+  --color-verde: #364B41;
+  --color-verde-dark: #26352E;
+  --color-terra: #B86D41;
+  --color-terra-light: #D9A27E;
+  --color-crema: #F4ECE1;
+  --color-arena: #E8DCCB;
+  --font-display: "Fraunces", serif;
+  --font-sans: "Nunito Sans", system-ui, sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--color-crema); color: var(--color-verde); font-family: var(--font-sans); }
+.blob { border-radius: 62% 38% 46% 54% / 48% 56% 44% 52%; }
+.blob2 { border-radius: 40% 60% 55% 45% / 55% 40% 60% 45%; }
+.grain::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");}
